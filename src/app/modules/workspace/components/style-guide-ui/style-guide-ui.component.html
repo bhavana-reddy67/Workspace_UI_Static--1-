@@ -1,0 +1,252 @@
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <h1>UI Style Guide</h1>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="mb-3">H1 - Heading</h1>
+            <h2 class="mb-3">H2 - Heading</h2>
+            <h3 class="mb-3">H3 - Heading</h3>
+            <h4 class="mb-3">H4 - Heading</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-12 mb-3">
+            <h2>Color Palette</h2>
+            <p>These Variables are defined as a combination of <strong>color Variable</strong> and <strong>percentage value of that color Variable</strong> (ex: $primary-color1-80, $primary-color1-60, $primary-color1-40...)</p>
+        </div>
+
+        <div class="col-6">
+            <h3 class="mb-2">Primary color 1</h3>
+            <div class="color-boxes primary-colors1">
+                <div class="color-box">100%</div>
+                <div class="color-box color-80">80%</div>
+                <div class="color-box color-60">60%</div>
+                <div class="color-box color-50">50%</div>
+                <div class="color-box color-40">40%</div>
+                <div class="color-box color-20">20%</div>
+                <div class="color-box color-10">10%</div>
+                <div class="color-box color-5">5%</div>
+            </div>            
+
+            <h3 class="mb-2">Primary color 2</h3>
+            <div class="color-boxes primary-colors2">
+                <div class="color-box">100%</div>
+                <div class="color-box color-80">80%</div>
+                <div class="color-box color-60">60%</div>
+                <div class="color-box color-50">50%</div>
+                <div class="color-box color-40">40%</div>
+                <div class="color-box color-20">20%</div>
+                <div class="color-box color-10">10%</div>
+                <div class="color-box color-5">5%</div>
+            </div>            
+        </div>
+
+        <div class="col-6">
+            <h3 class="mb-2">Secondary color</h3>
+            <div class="color-boxes secondary-colors">
+                <div class="color-box">100%</div>
+                <div class="color-box color-80">80%</div>
+                <div class="color-box color-60">60%</div>
+                <div class="color-box color-50">50%</div>
+                <div class="color-box color-40">40%</div>
+                <div class="color-box color-20">20%</div>
+                <div class="color-box color-10">10%</div>
+                <div class="color-box color-5">5%</div>
+            </div>
+
+
+            <h3 class="mb-2">Grey color</h3>
+            <div class="color-boxes grey-colors">
+                <div class="color-box">100%</div>
+                <div class="color-box color-80">80%</div>
+                <div class="color-box color-60">60%</div>
+                <div class="color-box color-50">50%</div>
+                <div class="color-box color-40">40%</div>
+                <div class="color-box color-20">20%</div>
+                <div class="color-box color-10">10%</div>
+                <div class="color-box color-5">5%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-12 mb-3">
+            <h2>Buttons</h2>
+            <p>We have 3 variants on buttons Solid(primary buttons), Bordered(secondary buttons), Transparent(tertiary buttons)</p>
+        </div>
+
+        <div class="col-4">
+            <h5 class="mb-1">Primary buttons</h5>
+            <div class="d-flex gap-3">
+                <a href="#" class="cta-primary">button</a>
+                <a href="#" class="cta-home-left">button</a>
+                <a href="#" class="cta-home-right">button</a>
+            </div>
+        </div> 
+
+        <div class="col-4">
+            <h5 class="mb-1">Secondary buttons</h5>
+            <div class="d-flex gap-3">
+                <a href="#" class="cta-secondary">button</a>
+                <a href="#" class="cta-secondary-home-left">button</a>
+                <a href="#" class="cta-secondary-home-right">button</a>
+            </div>
+        </div>
+
+        <div class="col-4 mb-4">
+            <h5 class="mb-1">Tertiary buttons</h5>
+            <div class="d-flex gap-3">
+                <a href="#" class="cta-tertiary">button</a>
+                <a href="#" class="cta-tertiary-home-left">button</a>
+                <a href="#" class="cta-tertiary-home-right">button</a>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Button Type</th>
+                        <th>Class</th>
+                        <th>Mixin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Primary button</td>
+                        <td>.cta-primary</td>
+                        <td>
+                            <pre><code>&#64;include mixin-name(background-color, text-color);</code></pre>
+                            <code>&#64;include button-solid($primary-color1, $white-color);</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Primary button with left icon</td>
+                        <td>NA</td>
+                        <td>
+                            <pre><code>&#64;include mixin-name(background-color, text-color, icon-path, icon-position);</code></pre>
+                            <code>&#64;include button-solid($primary-color1, $white-color, '/assets/images/icon-name.svg', left);</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Primary button with right icon</td>
+                        <td>NA</td>
+                        <td>
+                            <pre><code>&#64;include mixin-name(background-color, text-color, icon-path, icon-position);</code></pre>
+                            <code>&#64;include button-solid($primary-color1, $white-color, '/assets/images/icon-name.svg', right);</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Secondary button</td>
+                        <td>.cta-secondary</td>
+                        <td>
+                            <pre><code>&#64;include mixin-name(border-and-text-color);</code></pre>
+                            <code>&#64;include button-brd($primary-color1);</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Secondary button with left icon</td>
+                        <td>NA</td>
+                        <td>
+                            <pre><code>&#64;include mixin-name(border-and-text-color, icon-path, icon-position);</code></pre>
+                            <code>&#64;include button-brd($primary-color1, '/assets/images/icon-name.svg', left);</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Secondary button with right icon</td>
+                        <td>NA</td>
+                        <td>
+                            <pre><code>&#64;include mixin-name(border-and-text-color, icon-path, icon-position);</code></pre>
+                            <code>&#64;include button-brd($primary-color1, '/assets/images/icon-name.svg', right);</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tertiary button</td>
+                        <td>.cta-tertiary</td>
+                        <td>
+                            <pre><code>&#64;include mixin-name(color);</code></pre>
+                            <code>&#64;include button-transparent($primary-color1);</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tertiary button with left icon</td>
+                        <td>NA</td>
+                        <td>
+                            <pre><code>&#64;include mixin-name(color, icon-path, icon-position);</code></pre>
+                            <code>&#64;include button-transparent($primary-color1, '/assets/images/icon-name.svg', left);</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tertiary button with right icon</td>
+                        <td>NA</td>
+                        <td>
+                            <pre><code>&#64;include mixin-name(color, icon-path, icon-position);</code></pre>
+                            <code>&#64;include button-transparent($primary-color1, '/assets/images/icon-name.svg', right);</code>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Note: Even we can use image tag for icon on buttons with out any mixin dependency</p>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-12 mb-3">
+            <h2>Break points & media queries</h2>
+            <p>We are using Mobile first approch to mach the Bootstrap layout</p>
+        </div>
+        <div class="col-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Break point</th>
+                        <th>Media query</th>
+                        <th>Syntax</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Below 576px</td>
+                        <td>No Media query</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>576px and above</td>
+                        <td>'sm'</td>
+                        <td><code>&#64;include &#64;media(sm){{ '{' }}....{{ '}' }}</code></td>
+                    </tr>
+                    <tr>
+                        <td>768px and above</td>
+                        <td>'md'</td>
+                        <td><code>&#64;include &#64;media(md){{ '{' }}....{{ '}' }}</code></td>
+                    </tr>
+                    <tr>
+                        <td>992px and above</td>
+                        <td>'lg'</td>
+                        <td><code>&#64;include &#64;media(lg){{ '{' }}....{{ '}' }}</code></td>
+                    </tr>
+                    <tr>
+                        <td>1200px and above</td>
+                        <td>'xl'</td>
+                        <td><code>&#64;include &#64;media(xl){{ '{' }}....{{ '}' }}</code></td>
+                    </tr>
+                    <tr>
+                        <td>1400px and above</td>
+                        <td>'xxl'</td>
+                        <td><code>&#64;include &#64;media(xxl){{ '{' }}....{{ '}' }}</code></td>
+                    </tr>
+                    <tr>
+                        <td>1920px and above</td>
+                        <td>'xxxl'</td>
+                        <td><code>&#64;include &#64;media(xxxl){{ '{' }}....{{ '}' }}</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,142 @@
+@import '../../../assets/abstracts/variables';
+@import '../../../assets/abstracts/functions';
+@import '../../../assets/abstracts/mixins';
+
+.header{
+    background-color: $white-color;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(143, 143, 144, 0.17);
+    padding: 8px 0;
+    width: calc(100% - 24px);
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    z-index: 9999;
+
+    @include media(xl){
+        padding: 16px 0;
+        width: calc(100% - 48px);
+        left: 24px;
+        right: 24px;
+    }
+
+    .brand-logo{
+        display: inline-block;
+        img{
+            max-width: 120px;
+
+            @include media(md){
+                max-width: 160px;
+            }
+
+            @include media(xl){
+                max-width: 217px;
+            }
+        }
+    }
+
+    .header-items{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 25px;
+        padding-right: 10px;
+
+        @include media(xl){
+            gap: 40px;
+        }
+        
+        li{
+            .user-profile{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+
+                .user-profile-img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    background-color: $grey-color-10;
+
+                    @include media(xl){
+                        width: 38px;
+                        height: 38px;
+                    }
+                    
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .user-profile-details{
+                    display: none;
+
+                    @include media(xl){
+                        display: inline-block;
+                    }
+
+                    .user-name{
+                        @include font(16px);
+                        font-weight: 600;
+                        color: $grey-color;
+                    }
+                    .user-role{
+                        @include font(14px);
+                        font-weight: 400;
+                        color: $grey-color-80;
+                    }
+                }
+            }
+
+            .notifications{
+                .notifications-icon{
+                    position: relative;
+                    cursor: pointer;
+
+                    img{
+                        max-width: 22px;
+
+                        @include media(xl){
+                            max-width: 32px;
+                        }
+                    }
+                    span{
+                        position: absolute;
+                        content: '';
+                        right: -6px;
+                        top:-6px;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: $primary-color2;
+                        color: $white-color;
+                        @include font(10px);
+                        line-height: 1.6;
+                        font-weight: 700;
+                        text-align: center;
+
+                        @include media(xl){
+                            width: 19px;
+                            height: 19px;
+                            @include font(13px);
+                            line-height: 22px;
+                        }
+                    }
+                }
+                .notifications-dropdown{}
+            }
+
+            .logout{
+                img{
+                    max-width: 22px;
+
+                    @include media(xl){
+                        max-width: 23px;
+                    }
+                }
+            }
+        }
+    }
+}

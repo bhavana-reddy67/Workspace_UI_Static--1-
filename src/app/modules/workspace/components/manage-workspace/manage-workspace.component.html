@@ -1,0 +1,188 @@
+<div class="main-header">
+  <h4>Setup your workspace</h4>
+</div>
+<div class="main-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-10 col-xl-8 offset-md-1 offset-xl-2">
+          <div class="row">
+            <div class="col-12">
+              <ul class="steps">
+                <!-- Note: Add active/completed class to li. Use active class for pink and completed class for green -->
+                <li class="active">
+                  <span class="step-number">1</span>
+                  <span class="step-text">Environment Details</span>
+                </li>
+
+                <li>
+                  <span class="step-number">2</span>
+                  <span class="step-text">Workspace Details</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <h3>Choose your provider</h3>
+            
+              <div class="radio-card-list">
+                <label class="radio-card" for="radio-card-one">
+                  <input type="radio" name="radio-card" id="radio-card-one" checked>
+                  <div class="radio-card-content">
+                    <div class="brand-logo">
+                      <img src="/assets/images/icon-amazon-web-services.svg" alt="icon-amazon-web-services"/>
+                    </div>
+                    <div class="brand-title">Amazon Web Services</div>
+                    <div class="radio-icon"></div>
+                  </div>
+                </label>
+
+                <label class="radio-card" for="radio-card-two">
+                  <input type="radio" name="radio-card" id="radio-card-two" >
+                  <div class="radio-card-content">
+                    <div class="brand-logo">
+                      <img src="/assets/images/icon-microsoft-azure.svg" alt="icon-microsoft-azure">
+                    </div>
+                    <div class="brand-title">Microsoft Azure</div>
+                    <div class="radio-icon"></div>
+                  </div>
+                </label>
+
+                <label class="radio-card" for="radio-card-three">
+                  <input type="radio" name="radio-card" id="radio-card-three" >
+                  <div class="radio-card-content">
+                    <div class="brand-logo">
+                      <img src="/assets/images/icon-google-cloud-platform.svg" alt="icon-google-cloud-platform">
+                    </div>
+                    <div class="brand-title">Google Cloud Platform</div>
+                    <div class="radio-icon"></div>
+                  </div>
+                </label>
+
+                <label class="radio-card" for="radio-card-four">
+                  <input type="radio" name="radio-card" id="radio-card-four" >
+                  <div class="radio-card-content">
+                    <div class="brand-logo">
+                      <img src="/assets/images/icon-nvidia-ngc.svg" alt="icon-nvidia-ngc">
+                    </div>
+                    <div class="brand-title">NVIDIA NGC</div>
+                    <div class="radio-icon"></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <h3>Platform</h3>
+              <ul class="platforms-list">
+                <li>
+                  <span class="platform-icon">
+                    <img src="/assets/images/icon-databricks-mosaic-ai.svg" alt="icon-databricks-mosaic-ai"/>
+                  </span>
+                  <span class="platform-title">Databricks mosaic Ai</span>
+                </li>
+                <li>
+                  <span class="platform-icon">
+                    <img src="/assets/images/icon-nvidia.svg" alt="icon-nvidia"/>
+                  </span>
+                  <span class="platform-title">Nvidia</span>
+                </li>
+                <li>
+                  <span class="platform-icon">
+                    <img src="/assets/images/icon-kubernetes.svg" alt="icon-kubernetes"/>
+                  </span>
+                  <span class="platform-title">Kubernetes</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <h3>Identity Details</h3>
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="form-label">Admin User Email<sup>*</sup></label>
+                      <input type="text" class="form-control" placeholder="Enter email">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="cta-primary">Continue</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-10 col-xl-8 offset-md-1 offset-xl-2">
+          <div class="row">
+            <div class="col-12">
+              <ul class="steps">
+                <!-- Note: Add active/completed class to li. Use active class for pink and completed class for green -->
+                <li class="completed">
+                  <span class="step-number">1</span>
+                  <span class="step-text">Environment Details</span>
+                </li>
+
+                <li class="active">
+                  <span class="step-number">2</span>
+                  <span class="step-text">Workspace Details</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-8 col-xl-6">
+              <div class="form-group">
+                <label class="form-label">Work Space Name<sup>*</sup></label>
+                <input type="text" class="form-control" placeholder="Enter Your Workspace Name">
+                <div class="validation-block">
+                  <span class="validation-text">Validation</span>
+                  <span class="validation-range">0/20</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Description</label>
+                <textarea class="form-control" placeholder="Enter a brief description "></textarea>
+                <div class="validation-block">
+                  <span class="validation-text">Validation</span>
+                  <span class="validation-range">0/100</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Select Account<sup>*</sup></label>
+                <select class="form-select">
+                  <option>Select Account</option>
+                  <option>Option</option>
+                  <option>Option</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Region<sup>*</sup></label>
+                <select class="form-select">
+                  <option>Select Account</option>
+                  <option>Option</option>
+                  <option>Option</option>
+                </select>
+                <div class="validation-block error">
+                  <span class="validation-text">Please Select Region</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-10 col-xl-8 offset-md-1 offset-xl-2">
+          <app-table></app-table>
+        </div>
+      </div>
+    </div>
+</div>

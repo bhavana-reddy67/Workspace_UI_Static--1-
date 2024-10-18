@@ -1,0 +1,209 @@
+@import '../../../assets/abstracts/variables';
+@import '../../../assets/abstracts/functions';
+@import '../../../assets/abstracts/mixins';
+
+.sidebar{
+    position: fixed;
+    left: 12px;
+    top: 68px;
+    width: 40px;
+    min-height: calc(100% - 78px);
+    border-radius: 4.75px;
+    background-color: $white-color;
+    box-shadow: 0px 0px 9.5px 0px rgba(143, 143, 144, 0.17);
+    z-index: 999;
+
+    @include media(xl){
+        left: 24px;
+        top: 105px;
+        width: 220px;
+        min-height: calc(100% - 120px);
+    }
+
+    @include media(xxxl){
+        width: 320px;
+    }
+
+    ul{
+        margin: 0;
+        padding: 14px 5px;
+        border-bottom: 1px solid $grey-color-40;
+
+        &:last-child{
+            border: none;
+        }
+
+        @include media(xxxl){
+            padding: 20px 13px;
+        }
+
+        li{
+            margin-bottom: 12px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            .side-menu{
+                cursor: pointer;
+                
+                @include media(xl){
+                    padding: 8px 14px;
+                    border-radius: 10px;
+                }
+
+                @include media(xxxl){
+                    padding: 16px 20px;
+                }                
+ 
+                .side-menu-icon{
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: relative;
+
+                    @include media(xl) {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    @include media(xxxl){
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        width: 18px;
+                        height: 18px;
+                        background-size: contain;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        left: 50%;
+                        margin-left: -9px;
+                        top: 50%;
+                        transform: translateY(-50%);
+
+                        @include media(xxxl){
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+
+                    &.side-menu-dashboard{
+                        &::before{
+                            background-image: url('../../../assets/images/icon-dashboard.svg');
+                        }
+                    }
+                    &.side-menu-workspace{
+                        &::before{
+                            background-image: url('../../../assets/images/icon-workshop.svg');
+                        }
+                    }
+                    &.side-menu-projects{
+                        &::before{
+                            background-image: url('../../../assets/images/icon-projects.svg');
+                        }
+                    }
+                    &.side-menu-mymodels{
+                        &::before{
+                            background-image: url('../../../assets/images/icon-mymodels.svg');
+                        }
+                    }
+                    &.side-menu-pipeline{
+                        &::before{
+                            background-image: url('../../../assets/images/icon-pipeline.svg');
+                        }
+                    }
+                    &.side-menu-marketplace{
+                        &::before{
+                            background-image: url('../../../assets/images/icon-datamp.svg');
+                        }
+                    }
+                    &.side-menu-settings{
+                        &::before{
+                            background-image: url('../../../assets/images/icon-admin-settings.svg');
+                        }
+                    }
+                }
+
+                .side-menu-text{
+                    display: none;
+                    
+                    @include media(xl){
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-left: 10px;
+                        @include font(16px);
+                        line-height: 1;
+                        font-weight: 400;
+                        color: $grey-color;
+
+                        @include media(xxxl){
+                            padding-left: 15px;
+                            @include font(18px);
+                            line-height: 1;                            
+                        }
+                    }
+                }
+                
+                /** Hover state styels (icons and text color change) **/
+                &:hover, &.active{
+                    @include media(xl){
+                        background-color: $grey-color-10;
+                    }
+                    .side-menu-icon{
+                        background-color: $primary-color1-10;
+                        border-radius: 4px;
+
+                        @include media(xl){
+                            background-color: transparent;
+                        }
+
+                        &.side-menu-dashboard{
+                            &::before{
+                                background-image: url('../../../assets/images/icon-dashboard-blue.svg');
+                            }
+                        }
+                        &.side-menu-workspace{
+                            &::before{
+                                background-image: url('../../../assets/images/icon-workshop-blue.svg');
+                            }
+                        }
+                        &.side-menu-projects{
+                            &::before{
+                                background-image: url('../../../assets/images/icon-projects-blue.svg');
+                            }
+                        }
+                        &.side-menu-mymodels{
+                            &::before{
+                                background-image: url('../../../assets/images/icon-mymodels-blue.svg');
+                            }
+                        }
+                        &.side-menu-pipeline{
+                            &::before{
+                                background-image: url('../../../assets/images/icon-pipeline-blue.svg');
+                            }
+                        }
+                        &.side-menu-marketplace{
+                            &::before{
+                                background-image: url('../../../assets/images/icon-datamp-blue.svg');
+                            }
+                        }
+                        &.side-menu-settings{
+                            &::before{
+                                background-image: url('../../../assets/images/icon-admin-settings-blue.svg');
+                            }
+                        }
+                    }
+                    .side-menu-text{
+                        color: $primary-color1;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

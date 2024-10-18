@@ -1,0 +1,64 @@
+/**********************************************
+Theme Colors
+**********************************************/
+$white-color: #fff;
+$black-color: #000;
+
+$primary-color1: #5929D0;
+$primary-color1-80: mix(white, $primary-color1, 20%);
+$primary-color1-60: mix(white, $primary-color1, 40%);
+$primary-color1-50: mix(white, $primary-color1, 50%);
+$primary-color1-40: mix(white, $primary-color1, 60%);
+$primary-color1-20: mix(white, $primary-color1, 80%);
+$primary-color1-10: mix(white, $primary-color1, 90%);
+$primary-color1-05: mix(white, $primary-color1, 95%);
+
+$primary-color2: #CD128A;
+$primary-color2-80: mix(white, $primary-color2, 20%);
+$primary-color2-60: mix(white, $primary-color2, 40%);
+$primary-color2-50: mix(white, $primary-color2, 50%);
+$primary-color2-40: mix(white, $primary-color2, 60%);
+$primary-color2-20: mix(white, $primary-color2, 80%);
+$primary-color2-10: mix(white, $primary-color2, 90%);
+$primary-color2-05: mix(white, $primary-color2, 95%);
+
+$secondary-color: #01359B;
+$secondary-color-80: mix(white, $secondary-color, 20%);
+$secondary-color-60: mix(white, $secondary-color, 40%);
+$secondary-color-50: mix(white, $secondary-color, 50%);
+$secondary-color-40: mix(white, $secondary-color, 60%);
+$secondary-color-20: mix(white, $secondary-color, 80%);
+$secondary-color-10: mix(white, $secondary-color, 90%);
+$secondary-color-05: mix(white, $secondary-color, 95%);
+
+$grey-color: #333333;
+$grey-color-80: mix(white, $grey-color, 20%);
+$grey-color-60: mix(white, $grey-color, 40%);
+$grey-color-50: mix(white, $grey-color, 50%);
+$grey-color-40: mix(white, $grey-color, 60%);
+$grey-color-20: mix(white, $grey-color, 80%);
+$grey-color-10: mix(white, $grey-color, 90%);
+$grey-color-05: mix(white, $grey-color, 95%);
+
+/** Special colors for minimal use **/
+$red-color: #DC3545;
+$green-color: #198754;
+$yellow-color: #FFC107;
+$sky-blue-color: #2D8EFF;
+
+/** Bootstrap custom variables **/
+
+
+
+/**********************************************
+Medai break points
+**********************************************/
+$breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+  'xxxl': 1920px,
+);
